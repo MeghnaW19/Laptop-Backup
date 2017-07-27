@@ -1,0 +1,58 @@
+package com.stackroute.swisit.service;
+
+import com.stackroute.swisit.domain.*;
+import com.stackroute.swisit.repository.IntentRepository;
+import com.stackroute.swisit.repository.RelationshipRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.*;
+
+@Service
+public class IntentParseAlgoImpl implements IntentParseAlgo {
+
+    @Autowired
+    IntentRepository intentRepository;
+
+    @Autowired
+    RelationshipRepository relationshipRepository;
+
+    @Override
+    public ArrayList<IntentParserResult> calculateConfidence(IntentParserInput[] intentInput) {
+        List<Intent> intentsList = intentRepository.findIntents();
+        ArrayList<IntentParserResult> intentParserResultList = new ArrayList<IntentParserResult>();
+        for(IntentParserInput intentParserInput : intentInput){
+            intentParserResultList.addAll(calculateConfidenceScore(intentParserInput,intentsList));
+        }
+        return intentParserResultList;
+    }
+
+    @Override
+    public ArrayList<IntentParserResult> calculateConfidenceScore(IntentParserInput intentParserInput,List<Intent> intentList) {
+        ArrayList<IntentParserResult> results=new ArrayList<IntentParserResult>();
+        for (Intent intent : intentList){
+            Iterable<Relationships> relList = relationshipRepository.getAllTermsRelationOfIntent(intent.getName());
+            ContentSchema[] contentSchemas = intentParserInput.getContentSchema();
+            float in=0f,ci=0f,confidenceScore;
+            for(ContentSchema contentSchema : contentSchemas){
+                for(Relationships relationships : relList){
+                    if(contentSchema.getWord().equalsIgnoreCase(relationships.getTermName())){
+                        System.out.println(contentSchema.getWord());
+                        if(relationships.getRelName().equalsIgnoreCase("indicatorOf")) {
+                            in += contentSchema.getIntensity() * relationships.getWeight();
+                            System.out.println(contentSchema.getIntensity()+"            "+relationships.getWeight());
+                        }
+                        if(relationships.getRelName().equalsIgnoreCase("counterIndicatorOf")) {
+                            ci += contentSchema.getIntensity() * relationships.getWeight();
+                            System.out.println(contentSchema.getIntensity()+"            "+relationships.getWeight());
+                        }
+                    }
+                }
+            }
+            confidenceScore=in-ci;
+            IntentParserResult intentParserResult = new IntentParserResult(intentParserInput.getLink(),intent.getName(),confidenceScore);
+            results.add(intentParserResult);
+        }
+        return results;
+    }
+}

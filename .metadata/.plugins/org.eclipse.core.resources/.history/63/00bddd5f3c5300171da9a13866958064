@@ -1,0 +1,19 @@
+package com.stackroute.swisit.intentparse.domain;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown=true)
+public class DummyJson {
+
+		String nodeid;
+		String intentName;
+		String termName;
+		String relationshipType;
+		String weight;
+
+		
+
+
+
+	}
+

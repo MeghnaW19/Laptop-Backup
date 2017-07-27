@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.EnableAutoConfiguration"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+<fullyQualifiedTypeName name="com.stackroute.swisit.intentparse.domain.IntentParser"/>
+<fullyQualifiedTypeName name="com.stackroute.swisit.intentparse.service.CCalculatorService"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonIgnoreProperties"/>
+<fullyQualifiedTypeName name="com.stackroute.swisit.intentparse.domain.DummyJson"/>
+<fullyQualifiedTypeName name="com.stackroute.swisit.intentparse.controller.FetchJson"/>
+<fullyQualifiedTypeName name="org.apache.xpath.operations.Number"/>
+<fullyQualifiedTypeName name="javax.validation.constraints.NotNull"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="com.stackroute.swisit.intentparser.exception.ConfidenceScoreNotCalculatedException"/>
+<fullyQualifiedTypeName name="com.stackroute.swisit.intentparser.domain.CrawlerResult"/>
+<fullyQualifiedTypeName name="java.lang.Iterable"/>
+<fullyQualifiedTypeName name="org.hibernate.validator.constraints.URL"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,59 @@
+package com.stackroute.swisit.intentparse.domain;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown=true)
+public class DummyJson {
+
+		String nodeid;
+		String intentName;
+		String termName;
+		String relationshipType;
+		String weight;
+		public String getNodeid() {
+			return nodeid;
+		}
+		public void setNodeid(String nodeid) {
+			this.nodeid = nodeid;
+		}
+		public String getIntentName() {
+			return intentName;
+		}
+		public void setIntentName(String intentName) {
+			this.intentName = intentName;
+		}
+		public String getTermName() {
+			return termName;
+		}
+		public void setTermName(String termName) {
+			this.termName = termName;
+		}
+		public String getRelationshipType() {
+			return relationshipType;
+		}
+		public void setRelationshipType(String relationshipType) {
+			this.relationshipType = relationshipType;
+		}
+		public String getWeight() {
+			return weight;
+		}
+		public void setWeight(String weight) {
+			this.weight = weight;
+		}
+		public DummyJson(String nodeid, String intentName, String termName, String relationshipType, String weight) {
+			super();
+			this.nodeid = nodeid;
+			this.intentName = intentName;
+			this.termName = termName;
+			this.relationshipType = relationshipType;
+			this.weight = weight;
+		}
+		
+		
+
+		
+
+
+
+	}
+

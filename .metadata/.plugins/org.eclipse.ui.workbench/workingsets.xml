@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1498540585563_1" label="swisit" name="swisit">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/apigateway" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/intentparser" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/searcherservice" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/corecrawler" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/eurekaserver" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/swisit" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/configserver" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1497679287150_0" label="Window Working Set" name="Aggregate for window 1497679287149"/>
+</workingSetManager>

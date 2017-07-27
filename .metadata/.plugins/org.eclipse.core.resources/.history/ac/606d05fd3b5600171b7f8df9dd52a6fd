@@ -1,0 +1,67 @@
+package com.stackroute.swisit.domain;
+
+public class IntentParserOutput {
+	String Query;
+	String Url;
+	float ConfidenceScore;
+	String Intent;
+	
+	
+	public IntentParserOutput() { }
+
+
+	public IntentParserOutput(String query, String url, float confidenceScore, String intent) {
+		super();
+		Query = query;
+		Url = url;
+		ConfidenceScore = confidenceScore;
+		Intent = intent;
+	}
+
+
+	public String getQuery() {
+		return Query;
+	}
+
+
+	public void setQuery(String query) {
+		Query = query;
+	}
+
+
+	public String getUrl() {
+		return Url;
+	}
+
+
+	public void setUrl(String url) {
+		Url = url;
+	}
+
+
+	public float getConfidenceScore() {
+		return ConfidenceScore;
+	}
+
+
+	public void setConfidenceScore(float confidenceScore) {
+		ConfidenceScore = confidenceScore;
+	}
+
+
+	public String getIntent() {
+		return Intent;
+	}
+
+
+	public void setIntent(String intent) {
+		Intent = intent;
+	}
+	
+	
+	
+	
+	
+	
+
+}

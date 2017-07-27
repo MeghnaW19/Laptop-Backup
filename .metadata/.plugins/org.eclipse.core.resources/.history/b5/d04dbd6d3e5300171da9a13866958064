@@ -1,0 +1,9 @@
+[
+{"termname":"rectify","weight":"7","intentname":"trouble shooting"}
+{"termname":"fix", "weight":"7", "intentname":"trouble shooting"}
+{"termname":"service", "weight":"7", "intentname":"trouble shooting"}
+{"termname":"fix", "weight":"7", "intentname":"trouble shooting"}
+{"termname":"fix", "weight":"7", "intentname":"trouble shooting"}
+{"termname":"fix", "weight":"7", "intentname":"trouble shooting"}
+{"termname":"fix", "weight":"7", "intentname":"trouble shooting"}
+]

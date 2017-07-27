@@ -1,0 +1,11 @@
+package com.stackroute.swisit.domain;
+
+public class IntentParserOutput {
+	String query;
+	String url;
+	float confidenceScore;
+	String Intent;
+	
+	
+
+}

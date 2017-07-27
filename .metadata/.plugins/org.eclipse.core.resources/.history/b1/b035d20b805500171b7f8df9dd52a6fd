@@ -1,0 +1,17 @@
+package com.stackroute.swisit.repository;
+
+import com.stackroute.swisit.domain.IndicatorOf;
+import com.stackroute.swisit.domain.Intent;
+import com.stackroute.swisit.domain.Term;
+import org.springframework.data.neo4j.annotation.Query;
+import org.springframework.data.neo4j.repository.GraphRepository;
+
+import java.util.List;
+import java.util.Set;
+
+public interface IntentRepository extends GraphRepository<Intent>{
+    @Query("MATCH (n:`Intent`) RETURN n")
+    List<Intent> findIntents();
+    @Query("MATCH (t:Term)-[r:indicatorOf]->(i:Intent) RETURN r")
+    Set<Term> getIndicatorTerms();
+}

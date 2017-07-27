@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="apigateway"/>
+<aop-project name="intentparser"/>
+<aop-project name="searcherservice"/>
+<aop-project name="corecrawler"/>
+<aop-project name="eurekaserver"/>
+<aop-project name="configserver"/>
+</aop-reference-model>

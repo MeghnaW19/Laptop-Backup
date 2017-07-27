@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 packages to &apos;intent-parser/src/main/java&apos;&#x0A;- Original project: &apos;kafkaconsumer&apos;&#x0A;- Destination element: &apos;intent-parser/src/main/java&apos;&#x0A;- Original elements:&#x0A;     kafkaconsumer/src/main/java/com.stackroute.swisit.serialization&#x0A;     kafkaconsumer/src/main/java/com.stackroute.swisit.kafkaconsumerservice" description="Copy packages" destination="=intent-parser/src\/main\/java" element1="/src\/main\/java&lt;com.stackroute.swisit.serialization" element2="/src\/main\/java&lt;com.stackroute.swisit.kafkaconsumerservice" flags="589830" fragments="2" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1497854706879" version="1.0"/>
+</session>
